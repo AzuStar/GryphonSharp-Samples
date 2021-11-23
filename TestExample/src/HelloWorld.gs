@@ -1,7 +1,8 @@
 {
     "schema": {
-        "nodeCount": 5,
-        "dataCount": 0,
+        "schemaType": 1,
+        "nodeCount": 4,
+        "dataCount": 2,
         "bgSizes": [
             100,
             20
@@ -15,46 +16,83 @@
             482
         ]
     },
-    "nodes": {
+    "dataNodes": {
+        "0": {
+            "type": 1
+        },
+        "1": {
+            "type": 0,
+            "value": "Hello World from G#!"
+        },
+        "2": {
+            "type": 1
+        },
+        "3": {
+            "type": 0,
+            "value": "2"
+        },
+        "4": {
+            "type": 1
+        }
+    },
+    "codeNodes": {
         "0": {
             "type": 0,
             "target": "Main",
-            "execution": 2,
+            "execution": 1,
             "outputs": [
-                1
+                0
             ],
             "x": 184.15533980582524,
             "y": -79.79611650485435
         },
         "1": {
-            "type": 2,
-            "x": 454,
-            "y": 332
-        },
-        "2": {
-            "type": 4,
+            "type": 3,
             "reference": "System.Console",
             "target": "WriteLine",
-            "execution": 4,
+            "execution": 3,
             "inputs": [
-                3
+                1
             ],
             "x": 177.25163280874574,
             "y": 140.22128055042037
         },
-        "3": {
-            "type": 3,
-            "outputs": [
-                "Hello World from GryphonSharp!"
-            ],
+        "2": {
+            "type": 2,
+            "dataReference": 1,
             "x": 768.4757281553399,
             "y": 71.07766990291259
         },
-        "4": {
+        "3": {
             "type": 100,
             "x": 123,
             "y": 357
+        },
+        "4": {
+            "type": 0,
+            "target": "MultiplyByTwo",
+            "execution": 5,
+            "outputs": [
+                2
+            ]
+        },
+        "5": {
+            "type": 4,
+            "target": "*",
+            "execution": 6,
+            "inputs": [
+                2,
+                3
+            ],
+            "outputs": [
+                4
+            ]
+        },
+        "6": {
+            "type": 100,
+            "inputs": [
+                4
+            ]
         }
-    },
-    "datas": {}
+    }
 }

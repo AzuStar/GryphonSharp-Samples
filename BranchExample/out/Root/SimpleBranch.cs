@@ -7,18 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Test {
+namespace Root {
    
    
-   public class TestingExample {
+   public class SimpleBranch {
       
       public static void Main() {
-         object auto_42401656845 = Test.TestingExample.MultiplyByTwo(7);
-         System.Console.WriteLine(auto_42401656845);
-      }
-      
-      public static object MultiplyByTwo(object auto_42401656842) {
-         return (auto_42401656842 * 2);
+         if (true) {
+            System.Console.WriteLine("This is true!");
+         }
+         else {
+            System.Console.WriteLine("This is false!");
+         }
       }
    }
 }

@@ -16,8 +16,8 @@ namespace Test.Deep.Folder {
          System.Console.WriteLine("Hello World from G#!");
       }
       
-      private int MultiplyByTwo(int test) {
-         (auto_21977899822 * 2);
+      public static object MultiplyByTwo(object auto_17533896872) {
+         return (auto_17533896872 * 2);
       }
    }
 }

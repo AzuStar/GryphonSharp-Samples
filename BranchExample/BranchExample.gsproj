@@ -1,0 +1,6 @@
+{
+    "version": 1,
+    "src": "./src",
+    "bin": "./out",
+    "rootNamespace": "Root"
+}
